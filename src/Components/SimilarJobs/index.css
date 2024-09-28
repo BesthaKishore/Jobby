@@ -1,0 +1,86 @@
+.Job_items_details_container{
+    list-style: none;
+    background-color: #202020;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 15px 0;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+
+.Top_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+.Company_logo{
+    height: 70px;
+    margin-right: 10px;
+}
+
+.Top_card_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.Top_card_heading{
+    margin: 2px 0;
+    font-size: 20px;
+    color: #f1f5f9;
+    font-weight: 600;
+}
+
+.Middle_contianer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Middle_min_card_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+}
+
+.Middle_card_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.Middle_card_para{
+    font-size: 20px;
+    color: #f1f5f9;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.Description_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 15px 0;
+}
+
+.Description{
+    font-size: 18px;
+    color: #f1f5f9;
+    font-weight: 500;
+}
+
+.jobDescription{
+    margin: 0px;
+    font-size: 16px;
+    color: #f1f5f9;
+    font-weight: 400;
+    line-height: 2;
+}

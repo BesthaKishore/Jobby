@@ -1,0 +1,209 @@
+.Job_Items_container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+
+.Job_items_bg_container {
+    background-color: #000000;
+    padding: 25px 10px;
+    display: grid;
+    grid-template-columns: 26% 1fr; /* Single column */
+    grid-template-areas: "one two";
+    gap: 15px;
+     
+}
+
+.heading{
+    color: #ffffff;
+    
+}
+
+.sideArea{
+    /* background-color: red; */
+    grid-area: one;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0px 20px;
+}
+
+.Section_bg_container{
+    /* background-color: rebeccapurple; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: two;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Mobile_search_container{
+    width: 60%;
+    height: 35px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.Desktop_search_container{
+    width: 60%;
+    height: 35px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Search{
+    width: 100%;
+    padding: 6px 20px;
+    background-color: transparent;
+    outline: none;
+    border-width: 0px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.search_btn{
+    width: 100px;
+    height: 100%;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left: 1px solid #cbd5e1 !important;
+    background-color: #202020;
+    border-width: 0px;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.Un_order_success{
+    width: 100%;
+    padding: 0px;
+}
+
+.Failure_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Failure_image{
+    width: 500px;
+}
+
+.Failure_heading{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    margin: 8px 0px;
+    text-transform: capitalize;
+}
+
+.Failure_para{
+    font-size: 18px;
+    color: #7e858e;
+    margin: 0px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.retry_btn{
+    width: 100px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #6366f1;
+    border-width: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.Loader_spinner_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 100vh;
+}
+
+@media screen and (min-width: 568px){
+    .Mobile_search_container{
+        display: none;
+    }
+}
+
+@media screen and (max-width:567px){
+    .Job_items_bg_container {
+        background-color: #000000;
+        min-height: 100vh;
+        padding: 15px 10px;
+        display: grid;
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-areas: 
+        "one" 
+        "two";
+        gap: 15px;
+         
+    }
+
+    .Desktop_search_container{
+        display: none;
+    }
+
+    .Mobile_search_container{
+        display: flex;
+        width: 100%;
+        margin-top: 25px;
+
+    }
+
+    .Section_bg_container{
+        padding: 0px;
+    }
+
+    .Un_order_success{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Failure_container{
+        min-height: 50vh;
+    }
+
+    .Failure_image{
+        width: 250px;
+    }
+
+    .Failure_heading{
+        font-size: 16px;
+    }
+    
+    .Failure_para{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .Loader_spinner_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        height: 50vh;
+    }
+}
